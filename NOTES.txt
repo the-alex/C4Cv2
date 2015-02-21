@@ -1,0 +1,4 @@
+Templates:
+    A base template defines what the general outline is by initalizing
+    {% block thing %}{% endblock %} in the layout.
+    A child template defines what exactly goes in there.
