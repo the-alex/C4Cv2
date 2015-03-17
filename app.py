@@ -16,6 +16,7 @@ app.permanent_session_lifetime = timedelta(minutes=(60*24)) # One day
 # app.register_blueprint(controllers.login)
 
 app.register_blueprint(controllers.index)
+app.register_blueprint(controllers.alt)
 
 @app.errorhandler(404)
 def page_not_found(e):

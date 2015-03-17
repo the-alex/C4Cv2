@@ -4,7 +4,8 @@ index = Blueprint('index', __name__, template_folder='templates')
 
 @index.route('/', methods=['GET'])
 def index_route():
-    return render_template('index.html')
+    options = {"Title": "My awesome page"}
+    return render_template('index.html', **options)
 
     # TODO: Implement sessions and databases
     # if 'username' in session:
